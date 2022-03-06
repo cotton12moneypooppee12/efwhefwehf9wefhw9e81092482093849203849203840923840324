@@ -1,31 +1,31 @@
 local ADMINS = {
     3251732187, -- ccvtj
-    3229615413, -- qowd
+    1, -- qowd
 
 }
 local MODS = {
-    3229615413, -- qowd
-    3251732187, -- ccvtj
+    2, -- qowd
+    3, -- ccvtj
 }
 local STARS = {
-    3229615413, -- qowd
-    3251732187, -- ccvtj
+    4, -- qowd
+    5, -- ccvtj
 
 }
 local BOOSTERS = {
-    3229615413, -- qowd
-    3251732187, -- ccvtj
+    6, -- qowd
+    7, -- ccvtj
 
 }
 local NOEMOJI = {
-    1, -- XD
+    8, -- XD
 
 }
 local MONEYNAME = {
-    2, -- XD
+    9, -- XD
 }
 local CUSTOMWINNER = {
-    3, -- XD
+    10, -- XD
 }
 
 local formatNumber = (function(n)
@@ -40,9 +40,9 @@ local function checkswag()
                 local plrcheck = game:GetService('Players'):FindFirstChild(v.Name)
                 if plrcheck then
                     local plrID = game:GetService('Players'):FindFirstChild(v.Name).UserId
-                    if plrID == 3251732187 or plrID == 3229615413 then
+                    if plrID == 11 or plrID == 12 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. game.Players[v.Name].DisplayName) 
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. game.Players[v.Name].DisplayName) 
                         end
                     elseif plrID == 4 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
@@ -59,11 +59,11 @@ local function checkswag()
                     local plrID = game.Players:FindFirstChild(v.Name).UserId
                     if plrID == 6 or plrID == 7 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. game.Players[v.Name].DisplayName) 
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. game.Players[v.Name].DisplayName) 
                         end
                     elseif table.find(ADMINS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. game.Players[v.Name].DisplayName)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. game.Players[v.Name].DisplayName)
                         end
                     elseif table.find(MODS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
